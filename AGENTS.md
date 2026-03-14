@@ -97,6 +97,13 @@ Standing deliverable rules:
 - Keep scripts simple, reproducible, and easy for a learner to inspect
 - When changing datasets, update [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) if row counts, schema, or dataset purpose changed
 
+Synthetic data regeneration workflow:
+- Run [`make_synthetic_trial_data.py`](D:/Codex/Clinical_Research_Project/Dad_Stuff/synthetic_trial_data/make_synthetic_trial_data.py) from the repo root: `python Dad_Stuff\synthetic_trial_data\make_synthetic_trial_data.py`
+- Review changes with `git status --short`
+- Stage the generator and generated outputs: `git add Dad_Stuff\synthetic_trial_data\make_synthetic_trial_data.py data\`
+- Commit and push after verifying the regenerated files
+- [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) records the git commit that generated the dataset, so it normally points to the pre-commit revision used to create the files
+
 ## Git and Repo Safety
 - Follow repo-local rules in [`.codex/rules/`](D:/Codex/Clinical_Research_Project/.codex/rules)
 - Do not force-push, including `--force-with-lease`

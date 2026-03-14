@@ -25,3 +25,21 @@ Iterate on and update the three documents as needed
 Develop supplementary materials (practice exercises, challenge problems, weekly checklists)
 Track progress and adjust the plan based on what's working
 Answer questions about SQL, Tableau, Python, REDCap, AI tools, GitHub, HIPAA, and clinical research data workflows as they come up during the learning journey
+
+# Regenerating synthetic data
+
+Run the generator from the repo root:
+
+`python Dad_Stuff\synthetic_trial_data\make_synthetic_trial_data.py`
+
+Then review and publish changes:
+
+`git status --short`
+
+`git add Dad_Stuff\synthetic_trial_data\make_synthetic_trial_data.py data\`
+
+`git commit -m "Update synthetic trial dataset"`
+
+`git push origin main`
+
+Note: [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) records the git commit used to generate the dataset, so it typically refers to the revision just before the commit that publishes the regenerated files.
