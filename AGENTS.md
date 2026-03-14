@@ -109,3 +109,8 @@ Synthetic data regeneration workflow:
 - Do not force-push, including `--force-with-lease`
 - Ask before destructive cleanup or broad repository reorganization
 - Maintain a clean, portfolio-appropriate repository structure and documentation set
+
+## Repo-Local Skills
+- [`session-summary-writer`](D:/Codex/Clinical_Research_Project/.codex/skills/session-summary-writer/SKILL.md): use at the end of a work session to save a timestamped summary for Dad or Hannah, including accomplishments, approach, repo state, and next steps
+- Owner resolution for session summaries comes from `git remote get-url origin`: `geosmall` maps to Dad; any other GitHub owner maps to Hannah
+- When the user appears to be ending a work session, remind them that a session summary can be saved with `session-summary-writer`
