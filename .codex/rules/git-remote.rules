@@ -1,0 +1,22 @@
+rules = [
+    {
+        "pattern": ["git", "push", "--force"],
+        "decision": "forbidden",
+        "justification": "Force push is never allowed.",
+    },
+    {
+        "pattern": ["git", "push", "-f"],
+        "decision": "forbidden",
+        "justification": "Force push is never allowed.",
+    },
+    {
+        "pattern": ["git", "push", "--force-with-lease"],
+        "decision": "forbidden",
+        "justification": "Force push is never allowed.",
+    },
+    {
+        "pattern": ["git", "push"],
+        "decision": "prompt",
+        "justification": "Require approval before pushing to any remote.",
+    },
+]

@@ -1,0 +1,117 @@
+ae_id,subject_id,site_id,ae_term,start_date,end_date,severity,serious_flag,relatedness,action_taken,outcome,study_day_onset
+AE0001,SUBJ002,S001,Upper respiratory infection,2025-03-01,2025-03-11,Mild,N,Related,Concomitant medication,Recovering,43
+AE0002,SUBJ002,S001,Nausea,2025-01-22,2025-01-31,Moderate,N,Possibly Related,Concomitant medication,Recovering,5
+AE0003,SUBJ003,S001,Dizziness,2025-07-21,2025-07-24,Mild,N,Unrelated,Dose unchanged,Recovering,82
+AE0004,SUBJ006,S001,Injection site reaction,2025-05-03,2025-05-12,Mild,N,Unrelated,Concomitant medication,Recovered,8
+AE0005,SUBJ007,S001,Fatigue,2025-05-24,2025-05-30,Moderate,N,Unrelated,None,Recovered,38
+AE0006,SUBJ007,S001,Headache,2025-06-24,2025-06-26,Severe,N,Unrelated,Concomitant medication,Recovering,69
+AE0007,SUBJ008,S001,Injection site reaction,2025-07-09,2025-07-16,Moderate,N,Possibly Related,Dose unchanged,Not Recovered,69
+AE0008,SUBJ009,S001,Dizziness,2025-05-08,2025-05-13,Mild,N,Possibly Related,Dose unchanged,Not Recovered,28
+AE0009,SUBJ009,S001,Diarrhea,2025-04-25,2025-04-29,Mild,N,Related,Dose unchanged,Recovering,15
+AE0010,SUBJ011,S001,Nausea,2025-03-19,2025-03-20,Mild,N,Unrelated,Dose unchanged,Not Recovered,9
+AE0011,SUBJ013,S001,Diarrhea,2025-04-26,2025-05-05,Mild,N,Related,None,Not Recovered,69
+AE0012,SUBJ013,S001,Nausea,2025-03-08,2025-03-18,Mild,N,Possibly Related,None,Recovered,20
+AE0013,SUBJ013,S001,Dizziness,2025-03-18,2025-03-28,Mild,N,Unrelated,Dose unchanged,Not Recovered,30
+AE0014,SUBJ014,S001,Nausea,2025-02-02,2025-02-04,Mild,N,Unrelated,Dose unchanged,Not Recovered,9
+AE0015,SUBJ014,S001,Nausea,2025-02-20,2025-02-24,Mild,N,Related,Concomitant medication,Recovering,27
+AE0016,SUBJ014,S001,Injection site reaction,2025-03-01,2025-03-11,Mild,N,Unrelated,Dose unchanged,Not Recovered,36
+AE0017,SUBJ015,S001,Nausea,2025-04-25,2025-05-06,Mild,N,Possibly Related,None,Recovering,33
+AE0018,SUBJ016,S001,Headache,2025-06-18,2025-06-23,Moderate,N,Related,None,Recovering,47
+AE0019,SUBJ020,S001,Upper respiratory infection,2025-03-25,2025-04-04,Mild,N,Related,Dose unchanged,Recovering,25
+AE0020,SUBJ020,S001,Injection site reaction,2025-05-23,2025-06-03,Moderate,N,Unrelated,Concomitant medication,Recovering,84
+AE0021,SUBJ021,S001,Diarrhea,2025-04-09,2025-04-21,Mild,N,Possibly Related,None,Recovered,41
+AE0022,SUBJ021,S001,Upper respiratory infection,2025-05-22,2025-05-24,Mild,N,Possibly Related,Dose unchanged,Recovered,84
+AE0023,SUBJ024,S001,Dizziness,2025-06-14,2025-06-19,Moderate,N,Unrelated,Dose unchanged,Recovering,35
+AE0024,SUBJ024,S001,Upper respiratory infection,2025-05-19,2025-05-28,Moderate,N,Possibly Related,Concomitant medication,Recovered,9
+AE0025,SUBJ025,S001,Diarrhea,2025-02-05,2025-02-06,Moderate,N,Unrelated,Concomitant medication,Recovering,2
+AE0026,SUBJ025,S001,Dizziness,2025-03-13,2025-03-21,Moderate,N,Unrelated,Concomitant medication,Recovered,38
+AE0027,SUBJ025,S001,Insomnia,2025-03-09,2025-03-21,Mild,N,Related,Concomitant medication,Recovered,34
+AE0028,SUBJ026,S001,Nausea,2025-06-11,2025-06-19,Moderate,N,Unrelated,Concomitant medication,Recovered,35
+AE0029,SUBJ027,S001,Nausea,2025-05-21,2025-05-24,Moderate,N,Related,Dose unchanged,Recovering,32
+AE0030,SUBJ030,S002,Fatigue,2025-05-20,2025-05-28,Mild,N,Unrelated,Concomitant medication,Recovered,48
+AE0031,SUBJ031,S002,Insomnia,2025-05-05,2025-05-17,Moderate,N,Related,None,Recovered,57
+AE0032,SUBJ032,S002,Injection site reaction,2025-03-28,2025-03-30,Mild,N,Unrelated,Concomitant medication,Recovered,23
+AE0033,SUBJ033,S002,Injection site reaction,2025-05-04,2025-05-12,Mild,N,Possibly Related,None,Recovered,60
+AE0034,SUBJ036,S002,Nausea,2025-05-15,2025-05-18,Moderate,N,Related,None,Recovered,33
+AE0035,SUBJ040,S002,Insomnia,2025-05-15,2025-05-27,Moderate,N,Unrelated,Concomitant medication,Recovering,41
+AE0036,SUBJ048,S002,Fatigue,2025-04-04,2025-04-12,Mild,N,Unrelated,Dose unchanged,Recovered,48
+AE0037,SUBJ050,S002,Nausea,2025-05-31,2025-06-08,Severe,N,Related,Dose unchanged,Recovered,36
+AE0038,SUBJ051,S002,Diarrhea,2025-05-17,2025-05-28,Mild,N,Possibly Related,None,Recovering,30
+AE0039,SUBJ052,S002,Upper respiratory infection,2025-04-19,2025-04-29,Severe,Y,Possibly Related,Drug interrupted,Recovering,25
+AE0040,SUBJ052,S002,Injection site reaction,2025-05-01,2025-05-02,Mild,N,Unrelated,Concomitant medication,Not Recovered,37
+AE0041,SUBJ053,S002,Headache,2025-07-09,2025-07-19,Moderate,N,Possibly Related,Concomitant medication,Recovering,80
+AE0042,SUBJ054,S002,Insomnia,2025-05-12,2025-05-21,Mild,N,Related,None,Recovering,14
+AE0043,SUBJ054,S002,Nausea,2025-05-09,2025-05-17,Moderate,N,Related,Dose unchanged,Recovering,11
+AE0044,SUBJ055,S002,Headache,2025-06-18,2025-06-23,Severe,Y,Related,Drug interrupted,Recovering,59
+AE0045,SUBJ057,S003,Nausea,2025-07-16,2025-07-24,Mild,N,Possibly Related,None,Recovered,82
+AE0046,SUBJ058,S003,Fatigue,2025-07-08,2025-07-17,Mild,N,Unrelated,None,Recovering,76
+AE0047,SUBJ058,S003,Headache,2025-05-15,2025-05-21,Mild,N,Unrelated,None,Recovered,22
+AE0048,SUBJ062,S003,Fatigue,2025-05-26,2025-06-06,Mild,N,Possibly Related,Concomitant medication,Recovering,40
+AE0049,SUBJ067,S003,Nausea,2025-04-17,2025-04-22,Mild,N,Unrelated,None,Recovering,6
+AE0050,SUBJ071,S003,Diarrhea,2025-03-31,2025-04-12,Mild,N,Unrelated,None,Recovering,3
+AE0051,SUBJ071,S003,Insomnia,2025-03-30,2025-04-08,Mild,N,Related,Concomitant medication,Recovered,2
+AE0052,SUBJ075,S003,Upper respiratory infection,2025-02-23,2025-02-28,Mild,N,Possibly Related,None,Recovered,9
+AE0053,SUBJ078,S003,Fatigue,2025-05-18,2025-05-24,Mild,N,Unrelated,Dose unchanged,Recovered,36
+AE0054,SUBJ079,S003,Headache,2025-04-30,2025-05-06,Moderate,N,Possibly Related,Concomitant medication,Recovering,11
+AE0055,SUBJ079,S003,Fatigue,2025-05-12,2025-05-15,Severe,Y,Related,Drug interrupted,Recovered,23
+AE0056,SUBJ081,S004,Fatigue,2025-05-25,2025-05-30,Moderate,N,Unrelated,None,Recovered,64
+AE0057,SUBJ081,S004,Nausea,2025-06-12,2025-06-17,Mild,N,Possibly Related,None,Recovered,82
+AE0058,SUBJ083,S004,Injection site reaction,2025-05-09,2025-05-11,Mild,N,Unrelated,None,Recovered,33
+AE0059,SUBJ084,S004,Upper respiratory infection,2025-05-28,2025-05-30,Mild,N,Unrelated,None,Not Recovered,73
+AE0060,SUBJ086,S004,Headache,2025-05-06,2025-05-12,Severe,Y,Unrelated,Drug interrupted,Recovering,49
+AE0061,SUBJ086,S004,Injection site reaction,2025-04-19,2025-04-20,Mild,N,Unrelated,Concomitant medication,Not Recovered,32
+AE0062,SUBJ086,S004,Upper respiratory infection,2025-03-30,2025-04-04,Mild,N,Unrelated,None,Recovered,12
+AE0063,SUBJ087,S004,Upper respiratory infection,2025-06-24,2025-07-05,Moderate,N,Related,None,Recovering,23
+AE0064,SUBJ091,S004,Injection site reaction,2025-07-06,2025-07-18,Mild,N,Possibly Related,Concomitant medication,Recovering,66
+AE0065,SUBJ093,S004,Upper respiratory infection,2025-05-01,2025-05-10,Severe,Y,Possibly Related,Drug interrupted,Not Recovered,15
+AE0066,SUBJ093,S004,Nausea,2025-06-02,2025-06-04,Mild,N,Unrelated,None,Recovering,47
+AE0067,SUBJ095,S004,Nausea,2025-05-18,2025-05-27,Mild,N,Possibly Related,Dose unchanged,Not Recovered,35
+AE0068,SUBJ095,S004,Upper respiratory infection,2025-05-04,2025-05-14,Moderate,N,Unrelated,None,Recovered,21
+AE0069,SUBJ095,S004,Injection site reaction,2025-04-16,2025-04-27,Mild,N,Unrelated,Dose unchanged,Recovered,3
+AE0070,SUBJ099,S004,Diarrhea,2025-04-17,2025-04-27,Moderate,N,Related,Concomitant medication,Not Recovered,27
+AE0071,SUBJ099,S004,Insomnia,2025-05-20,2025-05-23,Mild,N,Related,None,Recovering,60
+AE0072,SUBJ099,S004,Headache,2025-05-06,2025-05-16,Moderate,N,Possibly Related,Concomitant medication,Not Recovered,46
+AE0073,SUBJ101,S004,Upper respiratory infection,2025-04-13,2025-04-16,Moderate,N,Possibly Related,Concomitant medication,Recovering,19
+AE0074,SUBJ101,S004,Diarrhea,2025-06-11,2025-06-23,Moderate,N,Related,Concomitant medication,Not Recovered,78
+AE0075,SUBJ102,S004,Insomnia,2025-06-06,2025-06-09,Mild,N,Unrelated,Dose unchanged,Not Recovered,74
+AE0076,SUBJ102,S004,Dizziness,2025-04-24,2025-04-25,Mild,N,Unrelated,None,Recovering,31
+AE0077,SUBJ103,S004,Upper respiratory infection,2025-04-22,2025-05-03,Mild,N,Possibly Related,Dose unchanged,Not Recovered,22
+AE0078,SUBJ105,S004,Nausea,2025-06-11,2025-06-17,Severe,Y,Related,Drug interrupted,Recovering,44
+AE0079,SUBJ105,S004,Injection site reaction,2025-07-20,2025-07-29,Mild,N,Possibly Related,None,Not Recovered,83
+AE0080,SUBJ106,S004,Diarrhea,2025-04-26,2025-05-04,Severe,Y,Unrelated,Drug interrupted,Not Recovered,35
+AE0081,SUBJ106,S004,Headache,2025-04-03,2025-04-05,Moderate,N,Related,Concomitant medication,Not Recovered,12
+AE0082,SUBJ107,S005,Diarrhea,2025-05-04,2025-05-07,Mild,N,Unrelated,Dose unchanged,Not Recovered,42
+AE0083,SUBJ108,S005,Nausea,2025-06-20,2025-06-23,Mild,N,Related,Dose unchanged,Recovered,54
+AE0084,SUBJ108,S005,Insomnia,2025-06-27,2025-07-01,Mild,N,Possibly Related,Concomitant medication,Recovering,61
+AE0085,SUBJ109,S005,Upper respiratory infection,2025-07-05,2025-07-15,Moderate,N,Possibly Related,Concomitant medication,Recovered,39
+AE0086,SUBJ109,S005,Upper respiratory infection,2025-06-24,2025-07-01,Severe,Y,Unrelated,Drug interrupted,Not Recovered,28
+AE0087,SUBJ109,S005,Nausea,2025-08-05,2025-08-14,Severe,N,Unrelated,None,Recovering,70
+AE0088,SUBJ111,S005,Headache,2025-07-17,2025-07-24,Mild,N,Possibly Related,Concomitant medication,Recovering,72
+AE0089,SUBJ112,S005,Insomnia,2025-08-25,2025-09-01,Severe,Y,Possibly Related,Drug interrupted,Recovered,82
+AE0090,SUBJ112,S005,Insomnia,2025-08-27,2025-09-05,Severe,Y,Related,Drug interrupted,Recovered,84
+AE0091,SUBJ113,S005,Headache,2025-06-11,2025-06-15,Mild,N,Possibly Related,Dose unchanged,Recovered,14
+AE0092,SUBJ113,S005,Headache,2025-06-05,2025-06-09,Mild,N,Related,Dose unchanged,Not Recovered,8
+AE0093,SUBJ113,S005,Headache,2025-06-02,2025-06-05,Mild,N,Related,None,Not Recovered,5
+AE0094,SUBJ117,S005,Upper respiratory infection,2025-06-30,2025-07-02,Mild,N,Related,Concomitant medication,Not Recovered,26
+AE0095,SUBJ117,S005,Headache,2025-06-28,2025-06-30,Mild,N,Related,Dose unchanged,Recovered,24
+AE0096,SUBJ117,S005,Injection site reaction,2025-07-01,2025-07-02,Mild,N,Unrelated,Concomitant medication,Recovered,27
+AE0097,SUBJ118,S005,Upper respiratory infection,2025-05-18,2025-05-24,Moderate,N,Possibly Related,None,Recovering,60
+AE0098,SUBJ122,S005,Dizziness,2025-04-17,2025-04-21,Mild,N,Related,None,Not Recovered,22
+AE0099,SUBJ126,S005,Injection site reaction,2025-07-01,2025-07-10,Mild,N,Unrelated,Dose unchanged,Not Recovered,60
+AE0100,SUBJ126,S005,Headache,2025-07-25,2025-07-29,Mild,N,Unrelated,Concomitant medication,Not Recovered,84
+AE0101,SUBJ128,S005,Diarrhea,2025-06-11,2025-06-15,Moderate,N,Unrelated,Concomitant medication,Recovering,3
+AE0102,SUBJ134,S005,Diarrhea,2025-06-11,2025-06-21,Mild,N,Unrelated,Dose unchanged,Not Recovered,9
+AE0103,SUBJ136,S005,Insomnia,2025-08-25,2025-08-31,Moderate,N,Related,Concomitant medication,Recovered,73
+AE0104,SUBJ136,S005,Headache,2025-08-24,2025-09-05,Mild,N,Unrelated,None,Recovering,72
+AE0105,SUBJ139,S005,Fatigue,2025-06-07,2025-06-13,Moderate,N,Unrelated,Dose unchanged,Recovered,29
+AE0106,SUBJ141,S006,Insomnia,2025-05-05,2025-05-13,Severe,N,Possibly Related,Concomitant medication,Recovered,21
+AE0107,SUBJ141,S006,Insomnia,2025-06-04,2025-06-11,Moderate,N,Related,Dose unchanged,Recovered,51
+AE0108,SUBJ143,S006,Insomnia,2025-06-30,2025-07-07,Mild,N,Related,None,Not Recovered,39
+AE0109,SUBJ147,S006,Dizziness,2025-08-24,2025-08-28,Moderate,N,Related,None,Recovered,78
+AE0110,SUBJ147,S006,Fatigue,2025-08-18,2025-08-24,Mild,N,Possibly Related,Dose unchanged,Not Recovered,72
+AE0111,SUBJ148,S006,Insomnia,2025-07-15,2025-07-22,Mild,N,Possibly Related,Dose unchanged,Recovering,62
+AE0112,SUBJ148,S006,Insomnia,2025-05-23,2025-06-01,Moderate,N,Unrelated,None,Not Recovered,9
+AE0113,SUBJ157,S006,Diarrhea,2025-07-13,2025-07-17,Moderate,N,Related,Concomitant medication,Recovered,27
+AE0114,SUBJ158,S006,Insomnia,2025-06-16,2025-06-21,Severe,Y,Related,Drug interrupted,Not Recovered,84
+AE0115,SUBJ158,S006,Headache,,,Moderate,N,Possibly Related,None,Recovering,
+AE0116,SUBJ160,S006,Injection site reaction,2025-06-23,2025-07-04,Mild,N,Unrelated,Concomitant medication,Not Recovered,33
