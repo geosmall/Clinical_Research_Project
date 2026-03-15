@@ -17,28 +17,28 @@ The learner owns the clinical framing and interpretation. Dad acts as engineerin
 
 ## Current source documents
 
-The current source of truth lives in [docs/](D:/Codex/Clinical_Research_Project/docs):
+The current source of truth lives in [docs/](./docs/):
 
-- [Clinical_Research_Learning_Final_Pack_Overview.docx](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Overview.docx)
-- [Clinical_Research_Learning_Final_Pack_Roadmap.docx](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Roadmap.docx)
-- [Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx)
-- [Clinical_Research_Learning_Final_Pack_Dads_Guide.docx](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.docx)
+- [Clinical_Research_Learning_Final_Pack_Overview.docx](./docs/Clinical_Research_Learning_Final_Pack_Overview.docx)
+- [Clinical_Research_Learning_Final_Pack_Roadmap.docx](./docs/Clinical_Research_Learning_Final_Pack_Roadmap.docx)
+- [Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx](./docs/Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx)
+- [Clinical_Research_Learning_Final_Pack_Dads_Guide.docx](./docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.docx)
 
 Older document names may still appear in repo history, but the final-pack files above are the active versions.
 
 ## Repo layout
 
-- [docs/](D:/Codex/Clinical_Research_Project/docs): learner-facing guides, roadmap, checklist, and mentor guide
-- [data/](D:/Codex/Clinical_Research_Project/data): synthetic clinical trial CSVs plus dataset notes and data dictionary
-- [Dad_Stuff/](D:/Codex/Clinical_Research_Project/Dad_Stuff): helper scripts and working materials
-- [.codex/](D:/Codex/Clinical_Research_Project/.codex): repo-local rules and skills
+- [docs/](./docs/): learner-facing guides, roadmap, checklist, and mentor guide
+- [data/](./data/): synthetic clinical trial CSVs plus dataset notes and data dictionary
+- [Dad_Stuff/](./Dad_Stuff/): helper scripts and working materials
+- [.codex/](./.codex/): repo-local rules and skills
 
 ## First steps before Week 1
 
-- Follow [BEFORE_WEEK_1_PLAN.md](D:/Codex/Clinical_Research_Project/BEFORE_WEEK_1_PLAN.md)
-- Set up the repo-local Python environment with [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md), including the Windows check to avoid Microsoft Store Python aliases
-- Use [ENVIRONMENT_NOTES.md](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md) only for environment-specific issues and sandbox notes
-- Review the current synthetic dataset in [data/README_data.md](D:/Codex/Clinical_Research_Project/data/README_data.md) and [data/data_dictionary.md](D:/Codex/Clinical_Research_Project/data/data_dictionary.md)
+- Follow [BEFORE_WEEK_1_PLAN.md](./BEFORE_WEEK_1_PLAN.md)
+- Set up the repo-local Python environment with [SETUP_ENVIRONMENT.md](./SETUP_ENVIRONMENT.md), including the Windows check to avoid Microsoft Store Python aliases
+- Use [ENVIRONMENT_NOTES.md](./ENVIRONMENT_NOTES.md) only for environment-specific issues and sandbox notes
+- Review the current synthetic dataset in [data/README_data.md](./data/README_data.md), [data/data_dictionary.md](./data/data_dictionary.md), and [data/csv/](./data/csv/)
 
 ## Synthetic data and safety rules
 
@@ -53,19 +53,19 @@ This repo is intentionally restricted to synthetic, public, or clearly represent
 Use the current generator from the repo root:
 
 ```powershell
-.\.venv\Scripts\python.exe Dad_Stuff\synthetic_trial_data_generator\make_synthetic_trial_data.py
+.\.venv\Scripts\python.exe data\make_synthetic_trial_data.py
 ```
 
 Then review and publish changes:
 
 ```powershell
 git status --short
-git add Dad_Stuff\synthetic_trial_data_generator\make_synthetic_trial_data.py data\
+git add data\make_synthetic_trial_data.py data\
 git commit -m "Update synthetic trial dataset"
 git push origin main
 ```
 
-[`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) records the git commit used to generate the dataset, so it normally refers to the pre-commit revision that produced the files.
+[`data/README_data.md`](./data/README_data.md) records the git commit used to generate the dataset, so it normally refers to the pre-commit revision that produced the files.
 
 ## Future considerations
 
@@ -76,4 +76,4 @@ git push origin main
 
 Related reference:
 
-- [CDISC_AWARENESS.md](D:/Codex/Clinical_Research_Project/docs/CDISC_AWARENESS.md)
+- [CDISC_AWARENESS.md](./docs/CDISC_AWARENESS.md)

@@ -1,59 +1,40 @@
 # Session Summary
 
 - Owner: Dad
-- Timestamp: 2026-03-15 07:09:03
+- Timestamp: 2026-03-15 10:52:32
 - Repository: `D:\Codex\Clinical_Research_Project`
 
 ## Summary
 
-Two work sessions today focused on aligning the repository to its current final-pack source documents, cleaning up setup and synthetic-data references, and tightening the pre-Week-1 onboarding path. The repo now has clearer setup guidance, corrected generator paths in docs, and a revised Week 1 plan that uses the existing synthetic dataset first while keeping Synthea as an optional stretch exercise.
+Completed the Week 1 startup workflow, restructured the main trial dataset and the Synthea practice dataset into self-contained data folders, and cleaned the repo docs so local workflows use relative paths.
 
 ## Accomplishments
 
-- Updated README.md to point to the active final-pack .docx documents, current repo layout, setup guide, and privacy-safe project framing.
-- Reworked BEFORE_WEEK_1_PLAN.md so the main Week 1 path is SQLite -> Python setup -> inspect current CSVs -> import into SQLite, with dataset regeneration only when needed.
-- Added the Synthea download/import-script idea back into BEFORE_WEEK_1_PLAN.md as an optional stretch exercise rather than a default startup dependency.
-- Aligned generator path references from the old Dad_Stuff/synthetic_trial_data/ location to Dad_Stuff/synthetic_trial_data_generator/ in repo docs, including AGENTS.md and data/README_data.md.
-- Added repo-local setup documentation and dependency tracking with SETUP_ENVIRONMENT.md and requirements.txt, and introduced repo-local doc/spreadsheet skill folders.
+- Verified Week 1 startup end-to-end: SQLite installed, data\trial_workbench.db created, Python .venv rebuilt and validated, and Tableau Public confirmed to open repo CSVs.
+- Moved the trial generator and SQLite import workflow into data/, moved the trial CSVs into data/csv/, updated the generator to write back to data/csv/, and removed the old Dad_Stuff import/generator folders.
+- Added data_synthea/ with the public Synthea sample zip, extracted CSVs, a local README, and a starter SQLite import script; documented that synthea_starter.db is generated locally and not committed.
+- Updated README.md, BEFORE_WEEK_1_PLAN.md, SETUP_ENVIRONMENT.md, and dataset READMEs to use relative links and the current local workflow paths.
 
 ## How It Was Done
 
-- Reviewed the current repo contract in AGENTS.md before making documentation recommendations so edits matched the declared source of truth and safety rules.
-- Compared claimed repo assets against the actual file tree and corrected docs where they referenced outdated filenames, missing markdown copies, or obsolete generator paths.
-- Kept the Week 1 plan lightweight by treating the checked-in synthetic dataset as the default on-ramp, while preserving richer optional exercises as stretch work.
-- Worked within a dirty tree and limited changes to targeted documentation and support files without reverting unrelated edits.
+- Validated each setup and import step in the repo before changing documentation, then restructured files in place with targeted moves so the main dataset and the Synthea practice dataset follow parallel folder patterns.
+- Kept runnable scripts local to each data folder and used relative path defaults so the workflows stay portable across clones and machines.
 
 ## Repo State
 
 - Branch: `main`
 - Origin: `https://github.com/geosmall/Clinical_Research_Project.git`
-- HEAD: `1b44762` (`1b44762be473fc6ca46ee2737f55661c4cc4ff29`)
-- Latest commit: `1b44762 2026-03-14 18:19:09 -0400 Add session summary skill and initial Dad session log`
+- HEAD: `f37bd1f` (`f37bd1f589d77f09a108a8937f8aaaa9d392111b`)
+- Latest commit: `f37bd1f 2026-03-15 10:46:17 -0400 Restructure dataset workflows under data folders`
 - Summary file: `D:\Codex\Clinical_Research_Project\Dad_Stuff\session_summaries\2026-03-15_dad_session_summary.md`
 - None recorded
 
 ### Working Tree Status
 
-- `M AGENTS.md`
-- ` D Dad_Stuff/synthetic_trial_data/make_synthetic_trial_data.py`
-- ` M README.md`
-- ` M data/README_data.md`
-- ` D docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.pdf`
-- ` D docs/Clinical_Research_Learning_Final_Pack_Execution_Checklist.pdf`
-- ` D docs/Clinical_Research_Learning_Final_Pack_Overview.pdf`
-- ` D docs/Clinical_Research_Learning_Final_Pack_Roadmap.pdf`
-- ` D docs/Dads_Guide_Engineer_Edition.pdf`
-- `?? .codex/skills/doc/`
-- `?? .codex/skills/spreadsheet/`
-- `?? BEFORE_WEEK_1_PLAN.md`
-- `?? Dad_Stuff/docx_to_markdown.py`
-- `?? Dad_Stuff/synthetic_trial_data_generator/`
-- `?? SETUP_ENVIRONMENT.md`
-- `?? requirements.txt`
+- `Working tree clean`
 
 ## Next Steps
 
-- Review the remaining uncommitted changes and make a targeted commit for the docs touched today rather than committing the whole worktree.
-- Optionally add a simple SQLite import script or lab note for the Synthea stretch exercise so the optional task is easier to execute later.
-- Verify whether final-pack PDF counterparts should be restored in docs/ to stay aligned with AGENTS.md document handling rules.
-- Use the updated BEFORE_WEEK_1_PLAN.md to drive actual Week 1 setup: create .venv, confirm SQLite/Tableau access, and load the current CSV dataset into SQLite.
+- Push commit f37bd1f to origin main.
+- Decide later whether AGENTS.md should be converted from absolute path links to relative links, balancing clone portability against local clickable path behavior in this environment.
+- Start repo-specific beginner SQL exercises against data/trial_workbench.db or continue the optional Synthea exploration with more tables and queries.

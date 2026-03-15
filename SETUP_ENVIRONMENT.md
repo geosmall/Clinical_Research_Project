@@ -93,14 +93,14 @@ The current `requirements.txt` supports the repo-local document and spreadsheet 
 Run repo scripts with the environment Python, even if the shell is not activated:
 
 ```powershell
-.\.venv\Scripts\python.exe Dad_Stuff\synthetic_trial_data_generator\make_synthetic_trial_data.py
+.\.venv\Scripts\python.exe data\make_synthetic_trial_data.py
 ```
 
 Use the same pattern for the SQLite import script and other repo-local helpers.
 
 ## Environment Notes
 
-See [ENVIRONMENT_NOTES.md](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md) for sandbox-specific notes such as:
+See [ENVIRONMENT_NOTES.md](./ENVIRONMENT_NOTES.md) for sandbox-specific notes such as:
 
 - `matplotlib` cache configuration with `MPLCONFIGDIR`
 - `.docx` rendering tool requirements beyond `requirements.txt`

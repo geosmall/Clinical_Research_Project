@@ -1,2 +1,4 @@
 tmp/
 trial_workbench.db
+data/trial_workbench.db-journal
+data_synthea/synthea_starter.db

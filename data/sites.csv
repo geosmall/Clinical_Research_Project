@@ -1,7 +1,0 @@
-site_id,site_name,city,state,region,site_activation_date,site_status,principal_investigator,enrollment_target,screen_failure_rate_target,monitoring_risk_level
-S001,Buffalo Clinical Research Center,Buffalo,NY,Northeast,2025-01-11,Active,PI Buffalo,24,0.24,Standard
-S002,Rochester Trial Institute,Rochester,NY,Northeast,2025-01-16,Active,PI Rochester,20,0.3,Standard
-S003,Cleveland Study Network,Cleveland,OH,Midwest,2025-01-26,Active,PI Cleveland,22,0.34,Standard
-S004,Pittsburgh Medical Research Group,Pittsburgh,PA,Northeast,2025-02-10,Active,PI Pittsburgh,18,0.38,Standard
-S005,Columbus Clinical Trials Unit,Columbus,OH,Midwest,2025-02-17,Active,PI Columbus,26,0.42,Standard
-S006,Albany Research Associates,Albany,NY,Northeast,2025-02-26,Monitoring,PI Albany,16,0.48,High
