@@ -15,7 +15,7 @@ This plan turns the pre-Week 1 setup into concrete, lightweight steps for this r
    Use SQLite for the first pass because this repo favors lightweight local tooling. Install SQLite plus DB Browser for SQLite, then create a local database file for this project, such as `trial_workbench.db`, and verify that it opens correctly.
 
 3. Set up Python for this repo.
-   Create one clean project environment and install the repo dependencies from [requirements.txt](D:/Codex/Clinical_Research_Project/requirements.txt). Follow [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md) for the standard `.venv` setup, then use [ENVIRONMENT_NOTES.md](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md) only if you hit environment-specific issues.
+   Create one clean project environment and install the repo dependencies from [requirements.txt](D:/Codex/Clinical_Research_Project/requirements.txt). Follow [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md) to verify that `python` is a normal installed interpreter rather than the Microsoft Store alias, then create and verify the repo-local `.venv`. Use [ENVIRONMENT_NOTES.md](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md) only if you hit environment-specific issues.
 
 4. Inspect the synthetic dataset already included in this repo.
    Review [data/README_data.md](D:/Codex/Clinical_Research_Project/data/README_data.md), [data/data_dictionary.md](D:/Codex/Clinical_Research_Project/data/data_dictionary.md), and the CSV files in [data/](D:/Codex/Clinical_Research_Project/data) so the schema is clear before import.

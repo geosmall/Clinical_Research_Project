@@ -36,7 +36,7 @@ Older document names may still appear in repo history, but the final-pack files 
 ## First steps before Week 1
 
 - Follow [BEFORE_WEEK_1_PLAN.md](D:/Codex/Clinical_Research_Project/BEFORE_WEEK_1_PLAN.md)
-- Set up the repo-local Python environment with [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md)
+- Set up the repo-local Python environment with [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md), including the Windows check to avoid Microsoft Store Python aliases
 - Use [ENVIRONMENT_NOTES.md](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md) only for environment-specific issues and sandbox notes
 - Review the current synthetic dataset in [data/README_data.md](D:/Codex/Clinical_Research_Project/data/README_data.md) and [data/data_dictionary.md](D:/Codex/Clinical_Research_Project/data/data_dictionary.md)
 
