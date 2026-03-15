@@ -14,13 +14,13 @@ The project is an 8-week, self-paced plan for an early-career clinical research 
 The through-line project is a privacy-safe portfolio artifact: a Synthetic Clinical Trial Monitoring Workbench.
 
 ## Primary Source Documents
-The current project definition lives in [`docs/`](D:/Codex/Clinical_Research_Project/docs).
+The current project definition lives in [`docs/`](./docs/).
 
 Core final-pack documents:
-- [`Clinical_Research_Learning_Final_Pack_Overview.docx`](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Overview.docx)
-- [`Clinical_Research_Learning_Final_Pack_Roadmap.docx`](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Roadmap.docx)
-- [`Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx`](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx)
-- [`Clinical_Research_Learning_Final_Pack_Dads_Guide.docx`](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.docx)
+- [`Clinical_Research_Learning_Final_Pack_Overview.docx`](./docs/Clinical_Research_Learning_Final_Pack_Overview.docx)
+- [`Clinical_Research_Learning_Final_Pack_Roadmap.docx`](./docs/Clinical_Research_Learning_Final_Pack_Roadmap.docx)
+- [`Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx`](./docs/Clinical_Research_Learning_Final_Pack_Execution_Checklist.docx)
+- [`Clinical_Research_Learning_Final_Pack_Dads_Guide.docx`](./docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.docx)
 
 Document handling rules:
 - Treat the final-pack `.docx` documents above as the current source of truth over older document names
@@ -29,11 +29,11 @@ Document handling rules:
 - `docs/` may contain both `.docx` and `.md` when that split improves usability, but do not create markdown duplicates of the final-pack source documents unless explicitly requested
 
 ## Repository Shape
-- [`docs/`](D:/Codex/Clinical_Research_Project/docs): polished learner-facing guides, roadmap, checklist, and mentor guide
-- [`data/`](D:/Codex/Clinical_Research_Project/data): synthetic trial-style CSVs and dataset notes
-- [`Dad_Stuff/`](D:/Codex/Clinical_Research_Project/Dad_Stuff): helper scripts and supporting working materials
-- [`ENVIRONMENT_NOTES.md`](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md): accumulated practical setup, sandbox, and runtime notes for this repo
-- [`.codex/`](D:/Codex/Clinical_Research_Project/.codex): Codex configuration and repo-local safety rules
+- [`docs/`](./docs/): polished learner-facing guides, roadmap, checklist, and mentor guide
+- [`data/`](./data/): synthetic trial-style CSVs and dataset notes
+- [`Dad_Stuff/`](./Dad_Stuff/): helper scripts and supporting working materials
+- [`ENVIRONMENT_NOTES.md`](./ENVIRONMENT_NOTES.md): accumulated practical setup, sandbox, and runtime notes for this repo
+- [`.codex/`](./.codex/): Codex configuration and repo-local safety rules
 
 ## Project Outcomes
 Work in this repo should support one or more of these outcomes:
@@ -96,24 +96,24 @@ Standing deliverable rules:
 - If datasets are regenerated, note the generator or workflow used
 - Favor realistic clinical research entities such as sites, subjects, visits, adverse events, and protocol deviations
 - Keep scripts simple, reproducible, and easy for a learner to inspect
-- When changing datasets, update [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) if row counts, schema, or dataset purpose changed
+- When changing datasets, update [`data/README_data.md`](./data/README_data.md) if row counts, schema, or dataset purpose changed
 
 Synthetic data regeneration workflow:
-- Run [`make_synthetic_trial_data.py`](D:/Codex/Clinical_Research_Project/data/make_synthetic_trial_data.py) from the repo root: `python data\make_synthetic_trial_data.py`
+- Run [`make_synthetic_trial_data.py`](./data/make_synthetic_trial_data.py) from the repo root: `python data\make_synthetic_trial_data.py`
 - Review changes with `git status --short`
 - Stage the generator and generated outputs: `git add data\make_synthetic_trial_data.py data\`
 - Commit and push after verifying the regenerated files
-- [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) records the git commit that generated the dataset, so it normally points to the pre-commit revision used to create the files
+- [`data/README_data.md`](./data/README_data.md) records the git commit that generated the dataset, so it normally points to the pre-commit revision used to create the files
 
 ## Git and Repo Safety
-- Follow repo-local rules in [`.codex/rules/`](D:/Codex/Clinical_Research_Project/.codex/rules)
+- Follow repo-local rules in [`.codex/rules/`](./.codex/rules/)
 - Do not force-push, including `--force-with-lease`
 - Ask before destructive cleanup or broad repository reorganization
 - Maintain a clean, portfolio-appropriate repository structure and documentation set
 
 ## Repo-Local Skills
-- [`session-summary-writer`](D:/Codex/Clinical_Research_Project/.codex/skills/session-summary-writer/SKILL.md): use at the end of a work session to save a timestamped summary for Dad or Hannah, including accomplishments, approach, repo state, and next steps
-- [`doc`](D:/Codex/Clinical_Research_Project/.codex/skills/doc/SKILL.md): use when working with `.docx` documents, including inspection, extraction, comparison, and rendering workflows for Word files
-- [`spreadsheet`](D:/Codex/Clinical_Research_Project/.codex/skills/spreadsheet/SKILL.md): use when working with spreadsheets or workbook-style tabular data, including inspection of sheets, structure, and content
+- [`session-summary-writer`](./.codex/skills/session-summary-writer/SKILL.md): use at the end of a work session to save a timestamped summary for Dad or Hannah, including accomplishments, approach, repo state, and next steps
+- [`doc`](./.codex/skills/doc/SKILL.md): use when working with `.docx` documents, including inspection, extraction, comparison, and rendering workflows for Word files
+- [`spreadsheet`](./.codex/skills/spreadsheet/SKILL.md): use when working with spreadsheets or workbook-style tabular data, including inspection of sheets, structure, and content
 - Owner resolution for session summaries comes from `git remote get-url origin`: `geosmall` maps to Dad; any other GitHub owner maps to Hannah
 - When the user appears to be ending a work session, remind them that a session summary can be saved with `session-summary-writer`

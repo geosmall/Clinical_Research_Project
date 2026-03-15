@@ -4,7 +4,7 @@ Minimal import workflow for loading the repo's synthetic clinical trial CSVs int
 
 ## What it creates
 
-- A SQLite database file, defaulting to `trial_workbench.db` in this folder
+- A local SQLite database file, defaulting to `data/trial_workbench.db`
 - Five tables based on the current CSV dataset in [`csv/`](./csv/):
   - `sites`
   - `subjects`
@@ -13,6 +13,7 @@ Minimal import workflow for loading the repo's synthetic clinical trial CSVs int
   - `protocol_deviations`
 
 The script replaces those tables each time it runs, which keeps the workflow simple for repeated practice.
+`trial_workbench.db` is a local generated file for SQL practice. After a fresh clone, run the import script to create it.
 
 ## Local Script
 
