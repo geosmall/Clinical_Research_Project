@@ -65,3 +65,14 @@ git push origin main
 ```
 
 [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) records the git commit used to generate the dataset, so it normally refers to the pre-commit revision that produced the files.
+
+## Future considerations
+
+- Add an optional `dirty` dataset export with intentional, documented QA issues for Week 5 data-quality exercises while keeping the current output as the clean canonical dataset.
+- Make the synthetic dataset more CDISC-aware without turning it into a full production-model training burden.
+- Improve the generator's statefulness further where that adds learning value, especially around operational timelines and trial-conduct logic.
+- Expand the data dictionary into a richer metadata/spec reference if the capstone grows beyond the current learner-friendly scope.
+
+Related reference:
+
+- [CDISC_AWARENESS.md](D:/Codex/Clinical_Research_Project/docs/CDISC_AWARENESS.md)

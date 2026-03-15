@@ -23,9 +23,10 @@ Core final-pack documents:
 - [`Clinical_Research_Learning_Final_Pack_Dads_Guide.docx`](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.docx)
 
 Document handling rules:
-- Prefer `.docx` for inspection and edits
 - Treat the final-pack `.docx` documents above as the current source of truth over older document names
-- Keep `docs/` `.docx`-only going forward unless a change explicitly introduces another format
+- Prefer `.docx` for polished learner-facing curriculum documents and companion handouts where Word-style formatting matters
+- Prefer `.md` for supplementary references, technical explainers, workflow notes, and documents where GitHub readability matters more than Word formatting
+- `docs/` may contain both `.docx` and `.md` when that split improves usability, but do not create markdown duplicates of the final-pack source documents unless explicitly requested
 
 ## Repository Shape
 - [`docs/`](D:/Codex/Clinical_Research_Project/docs): polished learner-facing guides, roadmap, checklist, and mentor guide
