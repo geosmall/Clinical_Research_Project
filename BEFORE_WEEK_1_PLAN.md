@@ -19,6 +19,7 @@ This plan turns the pre-Week 1 setup into concrete, lightweight steps for this r
 
 4. Load the current repo dataset into SQLite.
    Import `sites.csv`, `subjects.csv`, `visits.csv`, `adverse_events.csv`, and `protocol_deviations.csv` from [data/](D:/Codex/Clinical_Research_Project/data) into your SQLite database. The immediate goal is to be query-ready for Weeks 1-2, not to build a perfect pipeline yet.
+   A minimal import script is available at [import_trial_csvs_to_sqlite.py](D:/Codex/Clinical_Research_Project/Dad_Stuff/sqlite_import/import_trial_csvs_to_sqlite.py), with a short walkthrough in [README_sqlite_import.md](D:/Codex/Clinical_Research_Project/Dad_Stuff/sqlite_import/README_sqlite_import.md).
 
 5. Verify Tableau Public can read the project outputs.
    Install Tableau Public, then open one of the CSVs from [data/](D:/Codex/Clinical_Research_Project/data) to confirm the tool launches and can read the dataset. You do not need a polished dashboard yet.
