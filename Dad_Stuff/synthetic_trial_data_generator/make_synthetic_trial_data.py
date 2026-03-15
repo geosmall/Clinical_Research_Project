@@ -7,9 +7,9 @@ Outputs:
 - Use `--outdir` to write to a different folder
 
 Command-line usage:
-- `python Dad_Stuff\\synthetic_trial_data\\make_synthetic_trial_data.py`
-- `python Dad_Stuff\\synthetic_trial_data\\make_synthetic_trial_data.py --seed 42`
-- `python Dad_Stuff\\synthetic_trial_data\\make_synthetic_trial_data.py --outdir data`
+- `python Dad_Stuff\\synthetic_trial_data_generator\\make_synthetic_trial_data.py`
+- `python Dad_Stuff\\synthetic_trial_data_generator\\make_synthetic_trial_data.py --seed 42`
+- `python Dad_Stuff\\synthetic_trial_data_generator\\make_synthetic_trial_data.py --outdir data`
 """
 
 import argparse

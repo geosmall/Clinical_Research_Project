@@ -23,10 +23,9 @@ Core final-pack documents:
 - [`Clinical_Research_Learning_Final_Pack_Dads_Guide.docx`](D:/Codex/Clinical_Research_Project/docs/Clinical_Research_Learning_Final_Pack_Dads_Guide.docx)
 
 Document handling rules:
-- `.docx` and `.pdf` versions in `docs/` have identical content unless a change explicitly says otherwise
 - Prefer `.docx` for inspection and edits
-- If content changes, keep paired `.docx` and `.pdf` outputs aligned
-- Treat the final-pack documents above as the current source of truth over older document names
+- Treat the final-pack `.docx` documents above as the current source of truth over older document names
+- Keep `docs/` `.docx`-only going forward unless a change explicitly introduces another format
 
 ## Repository Shape
 - [`docs/`](D:/Codex/Clinical_Research_Project/docs): polished learner-facing guides, roadmap, checklist, and mentor guide
@@ -98,9 +97,9 @@ Standing deliverable rules:
 - When changing datasets, update [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) if row counts, schema, or dataset purpose changed
 
 Synthetic data regeneration workflow:
-- Run [`make_synthetic_trial_data.py`](D:/Codex/Clinical_Research_Project/Dad_Stuff/synthetic_trial_data/make_synthetic_trial_data.py) from the repo root: `python Dad_Stuff\synthetic_trial_data\make_synthetic_trial_data.py`
+- Run [`make_synthetic_trial_data.py`](D:/Codex/Clinical_Research_Project/Dad_Stuff/synthetic_trial_data_generator/make_synthetic_trial_data.py) from the repo root: `python Dad_Stuff\synthetic_trial_data_generator\make_synthetic_trial_data.py`
 - Review changes with `git status --short`
-- Stage the generator and generated outputs: `git add Dad_Stuff\synthetic_trial_data\make_synthetic_trial_data.py data\`
+- Stage the generator and generated outputs: `git add Dad_Stuff\synthetic_trial_data_generator\make_synthetic_trial_data.py data\`
 - Commit and push after verifying the regenerated files
 - [`data/README_data.md`](D:/Codex/Clinical_Research_Project/data/README_data.md) records the git commit that generated the dataset, so it normally points to the pre-commit revision used to create the files
 
@@ -112,5 +111,7 @@ Synthetic data regeneration workflow:
 
 ## Repo-Local Skills
 - [`session-summary-writer`](D:/Codex/Clinical_Research_Project/.codex/skills/session-summary-writer/SKILL.md): use at the end of a work session to save a timestamped summary for Dad or Hannah, including accomplishments, approach, repo state, and next steps
+- [`doc`](D:/Codex/Clinical_Research_Project/.codex/skills/doc/SKILL.md): use when working with `.docx` documents, including inspection, extraction, comparison, and rendering workflows for Word files
+- [`spreadsheet`](D:/Codex/Clinical_Research_Project/.codex/skills/spreadsheet/SKILL.md): use when working with spreadsheets or workbook-style tabular data, including inspection of sheets, structure, and content
 - Owner resolution for session summaries comes from `git remote get-url origin`: `geosmall` maps to Dad; any other GitHub owner maps to Hannah
 - When the user appears to be ending a work session, remind them that a session summary can be saved with `session-summary-writer`
