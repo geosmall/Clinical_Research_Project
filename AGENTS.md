@@ -32,6 +32,7 @@ Document handling rules:
 - [`docs/`](D:/Codex/Clinical_Research_Project/docs): polished learner-facing guides, roadmap, checklist, and mentor guide
 - [`data/`](D:/Codex/Clinical_Research_Project/data): synthetic trial-style CSVs and dataset notes
 - [`Dad_Stuff/`](D:/Codex/Clinical_Research_Project/Dad_Stuff): helper scripts and supporting working materials
+- [`ENVIRONMENT_NOTES.md`](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md): accumulated practical setup, sandbox, and runtime notes for this repo
 - [`.codex/`](D:/Codex/Clinical_Research_Project/.codex): Codex configuration and repo-local safety rules
 
 ## Project Outcomes
