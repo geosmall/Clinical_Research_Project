@@ -8,27 +8,27 @@ This plan turns the pre-Week 1 setup into concrete, lightweight steps for this r
 
 ## Action Plan
 
-1. Set up the SQL environment.
+1. Review privacy boundaries before any build work.
+   For this repo, the key rule is simple: only synthetic or public data goes into local tools, GitHub, or AI tools. Cross-check that understanding against the safety rules in [AGENTS.md](D:/Codex/Clinical_Research_Project/AGENTS.md).
+
+2. Set up the SQL environment.
    Use SQLite for the first pass because this repo favors lightweight local tooling. Install SQLite plus DB Browser for SQLite, then create a local database file for this project, such as `trial_workbench.db`, and verify that it opens correctly.
 
-2. Set up Python for this repo.
-   Create one clean project environment and install the repo dependencies from [requirements.txt](D:/Codex/Clinical_Research_Project/requirements.txt). Follow [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md) so the repo-local `.venv` works cleanly in PowerShell and VS Code.
+3. Set up Python for this repo.
+   Create one clean project environment and install the repo dependencies from [requirements.txt](D:/Codex/Clinical_Research_Project/requirements.txt). Follow [SETUP_ENVIRONMENT.md](D:/Codex/Clinical_Research_Project/SETUP_ENVIRONMENT.md) for the standard `.venv` setup, then use [ENVIRONMENT_NOTES.md](D:/Codex/Clinical_Research_Project/ENVIRONMENT_NOTES.md) only if you hit environment-specific issues.
 
-3. Inspect the synthetic dataset already included in this repo.
+4. Inspect the synthetic dataset already included in this repo.
    Review [data/README_data.md](D:/Codex/Clinical_Research_Project/data/README_data.md), [data/data_dictionary.md](D:/Codex/Clinical_Research_Project/data/data_dictionary.md), and the CSV files in [data/](D:/Codex/Clinical_Research_Project/data) so the schema is clear before import.
 
-4. Load the current repo dataset into SQLite.
+5. Load the current repo dataset into SQLite.
    Import `sites.csv`, `subjects.csv`, `visits.csv`, `adverse_events.csv`, and `protocol_deviations.csv` from [data/](D:/Codex/Clinical_Research_Project/data) into your SQLite database. The immediate goal is to be query-ready for Weeks 1-2, not to build a perfect pipeline yet.
    A minimal import script is available at [import_trial_csvs_to_sqlite.py](D:/Codex/Clinical_Research_Project/Dad_Stuff/sqlite_import/import_trial_csvs_to_sqlite.py), with a short walkthrough in [README_sqlite_import.md](D:/Codex/Clinical_Research_Project/Dad_Stuff/sqlite_import/README_sqlite_import.md).
 
-5. Verify Tableau Public can read the project outputs.
+6. Verify Tableau Public can read the project outputs.
    Install Tableau Public, then open one of the CSVs from [data/](D:/Codex/Clinical_Research_Project/data) to confirm the tool launches and can read the dataset. You do not need a polished dashboard yet.
 
-6. Do the first 10 SQLBolt exercises yourself.
+7. Do the first 10 SQLBolt exercises yourself.
    This is not repo work, but it directly supports the repo's Week 1-2 SQL tasks. The target is enough SQL fluency to help with `SELECT`, `JOIN`, grouping, and filtering against this dataset.
-
-7. Review HIPAA and privacy boundaries before any build work.
-   For this repo, the key rule is simple: only synthetic or public data goes into local tools, GitHub, or AI tools. Cross-check that understanding against the safety rules in [AGENTS.md](D:/Codex/Clinical_Research_Project/AGENTS.md).
 
 8. Stretch option: download a public Synthea dataset and write a SQLite import script.
    If you want an extra data-engineering exercise, download a small public dataset from `synthea.mitre.org`, inspect the CSV layout, and write a simple import script that loads selected CSVs into SQLite tables. Treat this as a secondary exercise after the repo dataset is already working, not as a blocker for Week 1 startup.
@@ -54,13 +54,13 @@ This plan turns the pre-Week 1 setup into concrete, lightweight steps for this r
 
 ## Recommended Order
 
-1. SQLite + DB Browser
-2. Python environment check
-3. Inspect current CSVs and data docs
-4. Import CSVs into SQLite
-5. Tableau Public check
-6. SQLBolt 1-10
-7. Privacy boundary review
-8. Optional Synthea import exercise
-9. README cleanup
-10. Regenerate data only if needed
+1. Privacy boundary review
+2. SQLite + DB Browser
+3. Python environment check
+4. Inspect current CSVs and data docs
+5. Import CSVs into SQLite
+6. Tableau Public check
+7. SQLBolt 1-10
+8. README cleanup
+9. Regenerate data only if needed
+10. Optional Synthea import exercise
